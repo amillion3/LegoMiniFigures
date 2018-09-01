@@ -1,10 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace LegoMiniFigures.Head
 {
-    class HeadBase
+    abstract class HeadBase
     {
+        public abstract bool HasHair { get; }
+
+        // Can be overriden, but not required
+        public virtual void Talk()
+        {
+            Console.WriteLine("This is the HeadBase Talk() method");
+        }
+
+        // Must be overriden
+        public abstract void Eat();
     }
 }

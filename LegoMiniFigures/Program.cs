@@ -8,11 +8,13 @@ namespace LegoMiniFigures
         {
             var baldy = new Head.HeadBald();
             var ladyLegs = new Legs.LegLadies();
-            var figureBaldy = new LegoMiniFigure(baldy, ladyLegs);
+            var fatTorso = new Torso.TorsoFat();
+            var figureBaldy = new LegoMiniFigure(baldy, ladyLegs, fatTorso);
 
             var hairy = new Head.HeadHair();
             var manlegs = new Legs.LegMens();
-            var figureHairy = new LegoMiniFigure(hairy, manlegs);
+            var skinnyTorso = new Torso.TorsoSkinny();
+            var figureHairy = new LegoMiniFigure(hairy, manlegs, skinnyTorso);
 
             figureBaldy.DoThings();
             figureHairy.DoThings();

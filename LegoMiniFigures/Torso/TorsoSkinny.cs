@@ -1,10 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace LegoMiniFigures.Torso
 {
-    class TorsoSkinny
+    class TorsoSkinny : TorsoBase
     {
+        public override bool HasGut { get { return false; } }
+
+        public override void Hairy()
+        {
+            Console.WriteLine("Not really hairy");
+            Console.ReadLine();
+        }
+
+        public override void SucksInGut()
+        {
+            Console.WriteLine("No gut sucking necessary!");
+        }
     }
 }

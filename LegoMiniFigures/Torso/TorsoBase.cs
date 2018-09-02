@@ -1,10 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace LegoMiniFigures.Torso
 {
-    class TorsoBase
+    abstract class TorsoBase
     {
+        public abstract bool HasGut { get; }
+
+        public virtual void Hairy()
+        {
+            Console.WriteLine("A hairy chest.");
+        }
+
+        public abstract void SucksInGut();
     }
 }

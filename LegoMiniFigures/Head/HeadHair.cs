@@ -11,6 +11,7 @@ namespace LegoMiniFigures.Head
         public override void Eat()
         {
             Console.WriteLine("Brown, straight hair people eat stuff.");
+            Console.ReadLine();
         }
     }
 }

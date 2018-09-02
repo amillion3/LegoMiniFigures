@@ -10,6 +10,7 @@ namespace LegoMiniFigures.Head
         public override void Eat()
         {
             Console.WriteLine("Bald headed man eats food.");
+            Console.ReadLine();
         }
     }
 }

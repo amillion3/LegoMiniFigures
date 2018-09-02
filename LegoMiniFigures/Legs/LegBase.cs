@@ -1,10 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace LegoMiniFigures.Legs
 {
-    class LegBase
+    abstract class LegBase
     {
+        public abstract bool HairyLegs { get; }
+        public abstract string MaleOrFemale { get; }
+
+        public virtual void Walk()
+        {
+            Console.WriteLine("This is the LegBase Walk() method");
+        }
+        // Must be overriden
+        public abstract void Run();
     }
+
 }

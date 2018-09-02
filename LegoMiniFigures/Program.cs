@@ -7,10 +7,12 @@ namespace LegoMiniFigures
         static void Main(string[] args)
         {
             var baldy = new Head.HeadBald();
-            var figureBaldy = new LegoMiniFigure(baldy);
+            var ladyLegs = new Legs.LegLadies();
+            var figureBaldy = new LegoMiniFigure(baldy, ladyLegs);
 
             var hairy = new Head.HeadHair();
-            var figureHairy = new LegoMiniFigure(hairy);
+            var manlegs = new Legs.LegMens();
+            var figureHairy = new LegoMiniFigure(hairy, manlegs);
 
             figureBaldy.DoThings();
             figureHairy.DoThings();

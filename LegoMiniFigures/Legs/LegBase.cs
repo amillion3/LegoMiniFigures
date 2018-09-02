@@ -5,6 +5,7 @@ namespace LegoMiniFigures.Legs
     abstract class LegBase
     {
         public abstract bool HairyLegs { get; }
+        public abstract string MaleOrFemale { get; }
 
         public virtual void Walk()
         {
